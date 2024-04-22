@@ -23,15 +23,15 @@ header .grid{
     justify-content: space-between;
     height: 100%;
 }
-header nav ul{
+header nav .botoes_sessoes{
     display: flex;
     justify-content: space-around;
     gap: 20px
 }
-header nav ul li a{
+header nav .botoes_sessoes li a{
     color: #171214;
 }
-header nav ul li a img{
+header nav .botoes_sessoes li a img{
     width: 10px;
 }
 /* fim do header. */
@@ -50,62 +50,113 @@ header nav ul li a img{
 h1{
     font-size: 3em;
     font-weight: 300;
-    width: 50%;
 }
-.sessao_principal .content .texto_home .paragrafos{
-    margin-bottom: 30px;
-    width: 60%;
+.sessao_principal .content{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
-.sessao_principal .content .texto_home .paragrafos p{
+.sessao_principal .content .texto_home{
+    margin-top: 40px;
+    width: 30%;
+}
+.sessao_principal .content .paragrafos{
+    width: 30%;
+}
+.sessao_principal .content .paragrafos p{
     font-size: 20px;
     padding-top: 30px;
 }
-.sessao_principal .content .texto_home .botoes button{
-    border-radius: 24px;
-    padding: 10px 20px 10px 20px;
-    
-}
-.sessao_principal .content .texto_home .botoes .botao_roxo{
-    color: #F7F8F7;
-    background-color: #7622D7;
-    border: 1px solid #7622D7;
-}
-.sessao_principal .content .texto_home .botoes .botao_transp{
-    color: #171214;
-    background-color: #CAFAD9;
-    border: 1px solid #171214;
-}
-.sessao_principal .content .texto_home .botoes{
-    display: flex;
-    gap: 10px;
-}
+
 /* fim sessao 1 */
 /* começo sessao 2 */
-.sessao_premios{
+.sessao_report{
     background-color: #F7F8F7;
 }
-.sessao_premios .content_premios .seta_lado img{
-    width: 20px;
-}
-.sessao_premios .content_premios .titulo_premios{
+.sessao_report .content_report .titulo_users{
     display: flex;
     justify-content: center;  
-    padding-top: 100px;
+    padding-top: 40px;
 }
-.sessao_premios .content_premios .titulo_premios h2{
+.sessao_report .content_report .titulo_users h2{
     font-weight: 300;
     font-size: 38px;
     max-width: 1000px;
+    padding-bottom: 40px;
+}
+.sessao_report .content_report .users_reports{
+    display: flex;
+    justify-content: center;
+}
+.sessao_report .content_report .users_reports ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.sessao_report .content_report .users_reports ul .porcentagem{
+    font-size: 40px;
     text-align: center;
+    width: 120px;
 }
-.sessao_premios .content_premios .premios_seta{
-    display: flex;
-    align-items: center;
-}
-.sessao_premios .content_premios .premios_seta .premios ul{
-    display: flex;
+.sessao_report .content_report .users_reports ul .titulo_porc{
+    font-size: 10px;
+    width: 60%;
+    text-align: center;
+    margin-left: 15px;
+    padding-bottom: 30px;
 }
 /* fim sessao 2 */
+/* inicio sessao 3 */
+.sessao_recursos{
+    background-color:  #CAFAD9; 
+}
+.sessao_recursos .content_recursos .titulo_recurso{
+    display: flex;
+    justify-content: center;  
+    padding-top: 30px;
+}
+.sessao_recursos .content_recursos .titulo_recurso h2{
+    font-weight: 300;
+    font-size: 38px;
+    max-width: 1000px;
+    padding-bottom: 30px;
+}
+.sessao_recursos .content_recursos .imagens .imagens_duplas{
+    display: flex;
+    justify-content: center;
+}
+.sessao_recursos .content_recursos .imagens .titleimg{
+    font-size: 20px;
+    font-weight: 500;
+}
+.sessao_recursos .content_recursos .imagens .subimagem{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+}
+.sessao_recursos .content_recursos .imagens .imagema{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sessao_recursos .content_recursos .imagens .imagemb{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sessao_recursos .content_recursos .imagens .imagemc{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* fim sessao 3 */
 /* começo do footer */
 footer{
     display: flex;
@@ -151,3 +202,22 @@ footer .direitos span{
     font-size: 16px;
 }
 /* fim do footer */
+@media screen and (max-width: 730px) {
+    .sessao_report .content_report .users_reports ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sessao_report .content_report .users_reports ul{
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .sessao_recursos .content_recursos .imagens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
