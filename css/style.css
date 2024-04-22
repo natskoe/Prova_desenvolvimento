@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Abel";
+    text-decoration: none;
+}
+.grid{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0px auto;
+}
+/* começo do header. */
+header{
+    background-color: #F7F8F7;
+    height: 100px;
+    width: 100%;
+}
+header .grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px
+}
+header nav ul li a{
+    color: #171214;
+}
+header nav ul li a img{
+    width: 10px;
+}
+/* fim do header. */
+/* sessao 1 */
+.sessao_principal{
+    background-color: #CAFAD9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+}
+.sessao_principal .content{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 3em;
+    font-weight: 300;
+    width: 50%;
+}
+.sessao_principal .content .texto_home .paragrafos{
+    margin-bottom: 30px;
+    width: 60%;
+}
+.sessao_principal .content .texto_home .paragrafos p{
+    font-size: 20px;
+    padding-top: 30px;
+}
+.sessao_principal .content .texto_home .botoes button{
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    
+}
+.sessao_principal .content .texto_home .botoes .botao_roxo{
+    color: #F7F8F7;
+    background-color: #7622D7;
+    border: 1px solid #7622D7;
+}
+.sessao_principal .content .texto_home .botoes .botao_transp{
+    color: #171214;
+    background-color: #CAFAD9;
+    border: 1px solid #171214;
+}
+.sessao_principal .content .texto_home .botoes{
+    display: flex;
+    gap: 10px;
+}
+/* fim sessao 1 */
+/* começo sessao 2 */
+.sessao_premios{
+    background-color: #F7F8F7;
+}
+.sessao_premios .content_premios .seta_lado img{
+    width: 20px;
+}
+.sessao_premios .content_premios .titulo_premios{
+    display: flex;
+    justify-content: center;  
+    padding-top: 100px;
+}
+.sessao_premios .content_premios .titulo_premios h2{
+    font-weight: 300;
+    font-size: 38px;
+    max-width: 1000px;
+    text-align: center;
+}
+.sessao_premios .content_premios .premios_seta{
+    display: flex;
+    align-items: center;
+}
+.sessao_premios .content_premios .premios_seta .premios ul{
+    display: flex;
+}
+/* fim sessao 2 */
+/* começo do footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100%;
+    padding-top: 64px;
+    background-color: #F7F8F7;
+}
+footer .span_contato{
+    font-size: 20px;
+    
+}
+footer .contatos_social{
+    display: flex;
+    gap: 100px;
+}
+footer .contatos_social .redes_sociais ul{
+    padding-top: 24px;
+}
+footer .contatos_social .redes_sociais ul li{
+    display: flex;
+    font-size: 16px;
+}
+footer .contatos_social .redes_sociais ul li img{
+    width: 25px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+footer .contatos_social .contatos ul{
+    padding-top: 24px;
+}
+footer .contatos_social .contatos ul li{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+footer .direitos{
+    text-align: center;
+    padding: 100px 0px 20px 0px;
+    opacity: 0.5;
+}
+footer .direitos span{
+    font-size: 16px;
+}
+/* fim do footer */
